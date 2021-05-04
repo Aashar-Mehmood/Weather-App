@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App Using API</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>Weather App Using Open Weather API</h1>
+  </header>
+  <main id="mainSec">
+    <div>
+    <section id="getInputs">
+      <h2>Before searching the Weather of your Area, <br> the Instructions to get Accurate Results</h2>
+      <br>
+      <ul>
+        <li>Use City ID or Country ID (ISO 3166) to get more Accurate results.</li>
+        <li>Directly Search Pakistan Main Cities Temperature from select options</li>
+        <li>You can only check the temperature of same city after 10 minutes of your last check of <b>Same</b> city.</li>
+        <li>You can use ID of city to check weather for second time if you want to check in 10 minutes</li>
+        <li>You can combine the country Name with city Name separated by comma</li>
+      </ul>
+      <br>
+      <div>
+      <label for="choice">Pakistan Cities</label>
+      <select name="choice" id="choice">
+        <option value="Rawalpindi">Rawalpindi</option>
+        <option value="Multan">Multan</option>
+        <option value="Karachi">Karachi</option>
+        <option value="Peshawar">Peshawar</option>
+        <option value="Gilgit">Gilgit</option>
+        <option value="Attock">Attock</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Faisalabad">Faisalabad</option>
+        <option value="Hyderabad">Hyderabad</option>
+      </select>
+      <button id="cityResults">Check Weather</button>
+    </div>
+    <br>
+    <div>
+      <label>OR Enter Area</label>
+      <input type="text" name="area" id="area" placeholder="Pakistan">
+      <button id="Results">Check Weather</button>
+    </div>
+    </section>
+    <section id="showResults">
+      <h2>Results</h2>
+      <div>
+        <fieldset>
+          <legend><h2>Co-Ordinates</h2></legend>
+          <label for="lon">Logitude :</label>
+          <span id="lon"></span>
+          <br>
+          <br>
+          <label for="lat">Latitude : </label>
+          <span id="lat"></span>
+        </fieldset>
+        <fieldset>
+          <legend><h2>Weather</h2></legend>
+          <label for="temp">Temperature :</label>
+          <span id="temp"></span>
+          <br>
+          <br>
+          <label for="min-temp">Minimum : </label>
+          <span id="min"></span>
+          <br>
+          <br>
+          <label for="max-temp">Maximum : </label>
+          <span id="max"></span>
+        </fieldset>
+      </div>
+    </section>
+  </div>
+  </main>
+  <footer>
+    <h2>Copy right &copy; Aashar Mehmood</h2>
+  </footer>
+  <script src="./app.js"></script>
+</body>
+</html>

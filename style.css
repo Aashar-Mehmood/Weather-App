@@ -1,0 +1,141 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body, html{
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+header{
+  padding: 40px 0;
+  text-align: center;
+  background-color: rgb(122, 175, 224);
+  color: whitesmoke;
+}
+main{
+  width: 100%;
+  min-height: 580px;
+  background-image: linear-gradient(to right, lime, skyblue);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+}
+main>div{
+  display: flex;
+  padding-top: 60px;
+  padding-left: 50px;
+}
+main>div{
+  min-height: 580px;
+  width: 100%;
+}
+#getInputs, #showResults{
+  width: 50%;
+}
+
+#getInputs h2 {
+  line-height: 2rem;
+}
+#getInputs ul {
+  margin: 20px 0;
+}
+#getInputs ul li {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  list-style: none;
+}
+label, span{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+span{
+  padding-left: 30px;
+}
+
+#getInputs input, select#choice{
+  margin:0 20px 0 50px;
+  padding:7px 0;
+  width: 240px;
+  border-radius: 4px;
+}
+select#choice{
+  margin-bottom: 10px;
+}
+#getInputs button{
+  padding: 7px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+#showResults h2{
+  text-align: center;
+}
+#showResults div{
+  max-width: 80%;
+  margin: 20px auto;
+}
+#showResults fieldset{
+  margin-top: 30px;
+  padding:20px 0 20px 20px;
+}
+#showResults legend{
+  text-align: center;
+
+}
+input::placeholder{
+  padding-left: 20px;
+}
+footer{
+  text-align: center;
+  padding: 36px 0px;
+  background-color:lightgrey;
+}
+
+
+@media screen and (max-width:1024px){
+  #getInputs{
+    width: 60%;
+  } 
+  #showResults{
+    width: 40%;
+  }
+}
+@media screen and (max-width:770px){
+  main>div{
+    flex-flow: column;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  #getInputs ul{
+    margin:10px 0;
+  }
+  #getInputs, #showResults{
+    width: 94%;
+    margin: 0 auto;
+  }
+  #getInputs{
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  #getInputs div{
+    display: flex;
+    flex-flow: column;
+    min-height: 100px;
+    justify-content: space-evenly;
+  }
+  #getInputs button, #getInputs button#cityResults{
+    margin: 0;
+    width: 60%;
+
+  }
+  #getInputs div input, #getInputs div select{
+    margin: 10px 0;
+    width: 60%;
+  }
+}
+
